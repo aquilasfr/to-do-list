@@ -4,37 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./assets/stylesheets/reset.css">
     <link rel="stylesheet" href="./assets/stylesheets/style.css">
     <title>To do List</title>
    
 </head>
-    <body>       
-        <form>
-            <input type="text" value="Type here...">
-            <button type="submit">Add Task</button>
-        </form>
+    <body>
+        <div class="container">      
+            <form class="form-task">
+                <input class="form-task__input" type="text" placeholder="Type here...">
+                <button class="form-task__button" type="submit">Add Task</button>
+            </form>
 
-        <section>
-            <h1>SHOPPING LIST</h1>
-            
-            <ul>
-                <li>
-                    <input type="checkbox" name=""/>
-                    <label>Buy dog food</label>
-                </li>
-                <li>
-                    <input type="checkbox" name=""/>
-                    <label>Get gift for my friend</label>
-                </li>
-                <li>
-                    <input type="checkbox" name=""/>
-                    <label>Workout</label>
-                </li>
-                <li>
-                    <input type="checkbox" name=""/>
-                    <label>Sleep</label>
-                </li>
-            </ul>              
-        </section>
+            <section class="to-do">
+                <h1 class="to-do__title">SHOPPING LIST</h1>
+                
+                <ul>
+                    <li class="to-do__task">
+                        <input type="checkbox" name=""/>
+                        <label>Buy dog food</label>
+                    </li>
+                    <li class="to-do__task">
+                        <input type="checkbox" name=""/>
+                        <label>Get gift for my friend :)</label>
+                    </li>
+                    <li class="to-do__task">
+                        <input type="checkbox" name=""/>
+                        <label>Workout</label>
+                    </li>
+                    <li class="to-do__task">
+                        <input type="checkbox" name=""/>
+                        <label>Sleep</label>
+                    </li>
+                </ul>              
+            </section>
+        </div>
     </body>
 </html>
