@@ -1,3 +1,48 @@
 body{
-    background-color: #eefdec ;
+    background-color: #eefdec;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.container {
+    padding: 30px;
+    
+}
+
+.form-task {    
+    display:flex;
+    justify-content: center;
+    margin-bottom: 30px;     
+}
+
+.form-task__input {
+    flex-grow: 1;
+    padding: 16px;
+    border-radius: 5px;
+    border: 2px solid #c9cec7;
+}
+
+.form-task__button {    
+    margin: 0 3px;
+    padding: 12px;
+    width: 130px;
+    background-color:#008001;
+    color: white;
+    border-radius: 6px;
+    border: none;        
+}
+
+.to-do__title {
+    margin-bottom: 18px;
+    font-size: 20px;
+    font-weight: bold;        
+}
+
+.to-do__task {
+    margin:15px 0 ;
+    padding: 8px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #c9cec7;
+    
+}
+
