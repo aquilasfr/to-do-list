@@ -1,32 +1,40 @@
-var inputTask= document.querySelector('.form-task__input');
-var formTask= document.querySelector('.form-task');
-var toDoList= document.querySelector('.to-do__list')
+var campoDoFormulario= document.querySelector('.form-task__input');
+var formulario= document.querySelector('.form-task');
+var lista= document.querySelector('.to-do__list')
 
 
-function handleFormTask(event){
+function enviaFormulario(event){
+
     event.preventDefault()
-    createToDoItem()
-    formTask.reset()
+
+    var foiDigitado=campoDoFormulario.value !='' 
+    if (foiDigitado)  {
+                
+        criaItemDaLista()
+        formulario.reset()
+    }
+      
+
     
 }
 
-function createToDoItem() {
+function criaItemDaLista() {
     var checkbox = document.createElement('input')
     checkbox.setAttribute("type", "checkbox")
 
     var label = document.createElement('label')
-    label.textContent = inputTask.value
+    label.textContent = campoDoFormulario.value
     
-    var listItem = document.createElement('li'); 
-    listItem.classList.add("to-do__task")   
+    var itemDaLista = document.createElement('li'); 
+    itemDaLista.classList.add("to-do__task")   
    
-    listItem.appendChild(checkbox)
-    listItem.appendChild(label)
-    toDoList.appendChild(listItem)
+    itemDaLista.appendChild(checkbox)
+    itemDaLista.appendChild(label)
+    lista.appendChild(itemDaLista)
 
 }
 
-formTask.addEventListener('submit', handleFormTask);
+formulario.addEventListener('submit', enviaFormulario);
 
 
 
